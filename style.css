@@ -16,11 +16,12 @@
 
 .timer {
     display: flex;
+    gap: 5px;
     margin-bottom: 20px;
+    font-size: 45px;
 }
 
 .timer p {
-    font-size: 45px;
     margin: 0;
     padding: 0;
 }
@@ -48,11 +49,30 @@ button#start:hover {
     background-color: #5a4a91;
 }
 
+button#stop {
+    background-color: #ef4848;
+    color: #fff;
+}
+
+button#stop:hover {
+    background-color: #c43a3a;
+}
+
+button#reset {
+    background-color: #539555;
+    color: #fff;
+}
+
+button#reset:hover {
+    background-color: #447a46;
+}
+
 button:disabled {
-    background-color: #2c2c2c;
-    color: #444444;
+    background-color: #2c2c2c !important;
+    color: #444444 !important;
+    cursor: not-allowed !important;
 }
 
 button:disabled:hover {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e !important;
 }
