@@ -11,15 +11,15 @@
 <body>
     <main class="background">
         <div class="timer">
-            <p>00:</p>
-            <p>00:</p>
-            <p>00</p>
+            <p id="hours">00</p>:
+            <p id="minutes">00</p>:
+            <p id="seconds">00</p>
         </div>
 
         <div class="controls">
-            <button id="start">Iniciar</button>
-            <button id="stop">Parar</button>
-            <button id="reset">Reiniciar</button>
+            <button id="start" onclick="startTimer()">Iniciar</button>
+            <button id="stop" onclick="stopTimer()" disabled>Parar</button>
+            <button id="reset" onclick="resetTimer()" disabled>Reiniciar</button>
         </div>
     </main>
 </body>
